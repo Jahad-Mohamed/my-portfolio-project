@@ -1,0 +1,31 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/breakpoints" as *;
+
+.header__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: left;
+  color: white;
+  background-color: rgba(50, 50, 50, 0.8);
+  width: 80%;
+  margin: 2rem;
+  line-height: 2;
+  z-index: 50;
+
+  @include medium {
+    width: 40%;
+  }
+
+  .header__my-name {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+.header__greetings {
+  color: $alabaster;
+  font-size: 2rem;
+}
