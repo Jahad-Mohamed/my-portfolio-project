@@ -8,6 +8,7 @@ import About from "./src/component/About/About";
 import Skills from "./src/component/Skills/Skills";
 import Projects from "./src/component/Projects/Projects";
 import Testimonials from "./src/component/Testimonials/Testimonials";
+import Contact from "./src/component/Contact/Contact";
 import Footer from "./src/component/Footer/Footer";
 
 const scene = new THREE.Scene();
@@ -71,12 +72,14 @@ Array(100).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load("space.jpg");
+const spaceTexture = new THREE.TextureLoader().load(
+  "ThreeJSBackground/space.jpg"
+);
 scene.background = spaceTexture;
 
 // Avatar
 
-const jayTexture = new THREE.TextureLoader().load("jay.png");
+const jayTexture = new THREE.TextureLoader().load("ThreeJSBackground/jay.png");
 
 const jay = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
@@ -87,8 +90,12 @@ scene.add(jay);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load("moon.jpg");
-const normalTexture = new THREE.TextureLoader().load("normal.jpg");
+const moonTexture = new THREE.TextureLoader().load(
+  "ThreeJSBackground/moon.jpg"
+);
+const normalTexture = new THREE.TextureLoader().load(
+  "ThreeJSBackground/normal.jpg"
+);
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
@@ -146,6 +153,7 @@ function App() {
       <Skills />
       <Projects />
       <Testimonials />
+      <Contact />
       <Footer />
     </div>
   );

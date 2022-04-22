@@ -9,23 +9,53 @@
   align-items: left;
   color: white;
   background-color: rgba(50, 50, 50, 0.8);
-  width: 80%;
-  margin: 2rem;
-  line-height: 2;
+  width: 90%;
+  margin: 5rem 1.5rem;
+  line-height: 1.5;
   z-index: 50;
 
   @include medium {
-    width: 40%;
-  }
+    min-width: 40%;
+    max-width: 50%;
+    margin: 10rem 4rem;
 
-  .header__my-name {
-    color: white;
-    font-size: 2rem;
-    font-weight: 600;
+    @include large {
+      max-width: 30%;
+    }
   }
 }
 
+.header__my-name {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+
+  @include medium {
+    font-size: 2.3rem;
+  }
+
+  @include large {
+    font-size: 3rem;
+  }
+}
+
+.header__name-section {
+  margin: 1rem 0rem;
+  @include medium {
+  }
+
+  @include large {
+  }
+}
 .header__greetings {
   color: $alabaster;
-  font-size: 2rem;
+  font-size: 1.2rem;
+  @include medium {
+    font-size: 1.4rem;
+  }
+
+  @include large {
+    font-size: 2rem;
+  }
 }
