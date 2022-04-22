@@ -1,5 +1,8 @@
 import React from "react";
 import "./contact.scss";
+import Phone from "../../../public/ContactIcon/phone.png";
+import Email from "../../../public/ContactIcon/email.png";
+import Location from "../../../public/ContactIcon/location.png";
 
 const Contact = () => {
   return (
@@ -16,17 +19,17 @@ const Contact = () => {
             Feel free to contact me from the details listed below, alternatively
             you can fill in a form and will get back to you within 24 hours.
           </p>
-          <div className="icon-text">
-            <i className="icon"> </i>
-            <span>+44 78428 92476</span>
+          <div className="icon__section">
+            <img src={Phone} alt="Location" className="icon" />
+            <span className="icon__text">+44 78428 92476</span>
           </div>
-          <div className="icon-text">
-            <i className="icon"> </i>
-            <span>jaybannks@gmail.com</span>
+          <div className="icon__section">
+            <img src={Email} alt="Email" className="icon" />
+            <span className="icon__text">jaybannks@gmail.com</span>
           </div>
-          <div className="icon-text">
-            <i className="icon"> </i>
-            <span>Junction Rd, London, N19 5LB</span>
+          <div className="icon__section">
+            <img src={Location} alt="Location" className="icon" />
+            <span className="icon__text">Junction Rd, London, N19 5LF</span>
           </div>
           <div className="social-media">
             <a href="#" className="icon-circle">

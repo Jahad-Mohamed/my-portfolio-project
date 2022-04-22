@@ -40,6 +40,16 @@
   }
 }
 
-.icon-text {
-  margin: 2rem 0rem;
+.icon {
+  width: 2rem;
+  height: 2rem;
+  color: white;
+  &__section {
+    margin: 2rem 0rem;
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    padding-left: 1rem;
+  }
 }
