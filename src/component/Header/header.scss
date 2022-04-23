@@ -42,6 +42,9 @@
 
 .header__name-section {
   margin: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   @include medium {
   }
 
@@ -51,6 +54,9 @@
 .header__greetings {
   color: $alabaster;
   font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   @include medium {
     font-size: 1.4rem;
   }
@@ -58,4 +64,34 @@
   @include large {
     font-size: 2rem;
   }
+}
+
+.header__greetingsOne {
+  font-size: 1rem;
+}
+
+#logo path:nth-child(1) {
+  stroke-dasharray: 50px;
+}
+#logo path:nth-child(2) {
+}
+#logo path:nth-child(3) {
+}
+#logo path:nth-child(4) {
+}
+#logo path:nth-child(5) {
+}
+#logo path:nth-child(6) {
+}
+#logo path:nth-child(7) {
+}
+#logo path:nth-child(8) {
+}
+#logo path:nth-child(9) {
+}
+#logo path:nth-child(10) {
+}
+#logo path:nth-child(11) {
+}
+#logo path:nth-child(12) {
 }
