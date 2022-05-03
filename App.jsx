@@ -41,7 +41,6 @@ const torusKnot = new THREE.Mesh(geometry, material);
 scene.add(torusKnot);
 
 // Light
-
 const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(5, 5, 5);
 
@@ -71,18 +70,16 @@ function addStar() {
 Array(100).fill().forEach(addStar);
 
 // Background
-
 const spaceTexture = new THREE.TextureLoader().load(
   "ThreeJSBackground/space.jpg"
 );
 scene.background = spaceTexture;
 
 // Avatar
-
 const jayTexture = new THREE.TextureLoader().load("ThreeJSBackground/jay.png");
 
 const jay = new THREE.Mesh(
-  new THREE.BoxGeometry(3, 3, 3),
+  new THREE.BoxGeometry(2, 2, 2),
   new THREE.MeshBasicMaterial({ map: jayTexture })
 );
 
