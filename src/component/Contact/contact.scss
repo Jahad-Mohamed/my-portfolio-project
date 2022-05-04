@@ -1,0 +1,61 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/breakpoints" as *;
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    backdrop-filter: blur(25px);
+    margin: 0rem 2rem;
+  }
+  &__info {
+    width: 100%;
+    border-radius: 0.4rem;
+    background-color: $purple;
+    color: $white;
+    flex: 0 1 100%;
+    padding: 3.2rem;
+    @include medium {
+      flex: 0 1 50%;
+    }
+    @include large {
+      flex: 0 1 40%;
+    }
+    h4 {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    p {
+      margin: 1.5rem 0rem;
+    }
+  }
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  color: white;
+  &__section {
+    margin: 2rem 0rem;
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    padding-left: 1rem;
+  }
+}

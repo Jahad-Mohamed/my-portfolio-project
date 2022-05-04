@@ -8,6 +8,7 @@ import About from "./src/component/About/About";
 import Skills from "./src/component/Skills/Skills";
 import Projects from "./src/component/Projects/Projects";
 import Testimonials from "./src/component/Testimonials/Testimonials";
+import Contact from "./src/component/Contact/Contact";
 import Footer from "./src/component/Footer/Footer";
 
 const scene = new THREE.Scene();
@@ -40,7 +41,6 @@ const torusKnot = new THREE.Mesh(geometry, material);
 scene.add(torusKnot);
 
 // Light
-
 const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(5, 5, 5);
 
@@ -70,16 +70,16 @@ function addStar() {
 Array(100).fill().forEach(addStar);
 
 // Background
-
-const spaceTexture = new THREE.TextureLoader().load("space.jpg");
+const spaceTexture = new THREE.TextureLoader().load(
+  "ThreeJSBackground/space.jpg"
+);
 scene.background = spaceTexture;
 
 // Avatar
-
-const jayTexture = new THREE.TextureLoader().load("jay.png");
+const jayTexture = new THREE.TextureLoader().load("ThreeJSBackground/jay.png");
 
 const jay = new THREE.Mesh(
-  new THREE.BoxGeometry(3, 3, 3),
+  new THREE.BoxGeometry(2, 2, 2),
   new THREE.MeshBasicMaterial({ map: jayTexture })
 );
 
@@ -87,8 +87,12 @@ scene.add(jay);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load("moon.jpg");
-const normalTexture = new THREE.TextureLoader().load("normal.jpg");
+const moonTexture = new THREE.TextureLoader().load(
+  "ThreeJSBackground/moon.jpg"
+);
+const normalTexture = new THREE.TextureLoader().load(
+  "ThreeJSBackground/normal.jpg"
+);
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
@@ -139,127 +143,15 @@ animate();
 
 function App() {
   return (
-    <div>
-      <Header />
+    <div className="app__section">
       <Nav />
+      <Header />
       <About />
       <Skills />
       <Projects />
       <Testimonials />
+      <Contact />
       <Footer />
-
-      <main>
-        <header>
-          <h1>Jeff Delaney</h1>
-          <p>🚀 Welcome to my website!</p>
-        </header>
-
-        <blockquote>
-          <p>I like making stuff and putting it on the internet</p>
-        </blockquote>
-
-        <section>
-          <h2>📜 Manifesto</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </section>
-
-        <section class="light">
-          <h2>👩🏽‍🚀 Projects</h2>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-
-          <h2>🏆 Accomplishments</h2>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </section>
-
-        <blockquote>
-          <p>The best way out is always through -Robert Frost</p>
-        </blockquote>
-
-        <section class="left">
-          <h2>🌮 Work History</h2>
-
-          <h3>McDonalds</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <h3>Burger King</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <h3>Taco Bell</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </section>
-
-        <blockquote>
-          <p>Thanks for watching!</p>
-        </blockquote>
-      </main>
     </div>
   );
 }

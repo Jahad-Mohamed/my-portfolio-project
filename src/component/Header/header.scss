@@ -1,0 +1,173 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/breakpoints" as *;
+
+.header__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: left;
+  color: white;
+  background-color: rgba(50, 50, 50, 0.8);
+  width: 90%;
+  margin: 5rem 1.5rem;
+  line-height: 1.5;
+  z-index: 50;
+
+  @include medium {
+    min-width: 40%;
+    max-width: 50%;
+    margin: 26rem 4rem;
+
+    @include large {
+      max-width: 30%;
+      margin: 26rem 4rem;
+    }
+  }
+}
+
+.header__my-name {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+
+  @include medium {
+    font-size: 2.3rem;
+  }
+
+  @include large {
+    font-size: 3rem;
+  }
+}
+
+.header__name-section {
+  margin: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  @include medium {
+  }
+
+  @include large {
+  }
+}
+.header__greetings {
+  color: $alabaster;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  @include medium {
+    font-size: 1.4rem;
+  }
+
+  @include large {
+    font-size: 2rem;
+  }
+}
+
+.header__greetingsOne {
+  font-size: 1rem;
+}
+
+.path-1 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 144px;
+  stroke-dashoffset: 144px;
+  animation: line-anim 2s ease forwards;
+}
+
+.path-2 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 208px;
+  stroke-dashoffset: 208px;
+  animation: line-anim 2s ease forwards 0.4s;
+}
+
+.path-3 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 213px;
+  stroke-dashoffset: 213px;
+  animation: line-anim 2s ease forwards 0.8s;
+}
+
+.path-4 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 208px;
+  stroke-dashoffset: 208px;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+
+.path-5 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 232px;
+  stroke-dashoffset: 232px;
+  animation: line-anim 2s ease forwards 1.6s;
+}
+
+.path-6 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 327px;
+  stroke-dashoffset: 327px;
+  animation: line-anim 2s ease forwards 2s;
+}
+
+.path-7 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 178px;
+  stroke-dashoffset: 178px;
+  animation: line-anim 2s ease forwards 2.4s;
+}
+
+.path-8 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 213px;
+  stroke-dashoffset: 213px;
+  animation: line-anim 2s ease forwards 2.8s;
+}
+
+.path-9 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 208px;
+  stroke-dashoffset: 208px;
+  animation: line-anim 2s ease forwards 3.2s;
+}
+
+.path-10 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 292px;
+  stroke-dashoffset: 292px;
+  animation: line-anim 2s ease forwards 3.7s;
+}
+
+.path-11 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 210px;
+  stroke-dashoffset: 210px;
+  animation: line-anim 2s ease forwards 4s;
+}
+
+.path-12 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 232px;
+  stroke-dashoffset: 232px;
+  animation: line-anim 2s ease forwards 4.3s;
+}
+
+#logo {
+  position: relative;
+  animation: fill 0.5s ease forwards 4.8s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  to {
+    fill: white;
+  }
+}

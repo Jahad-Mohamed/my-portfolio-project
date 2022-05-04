@@ -1,0 +1,51 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/breakpoints" as *;
+
+.about__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  backdrop-filter: blur(25px);
+
+  margin: 3rem 3rem;
+  line-height: 2;
+  z-index: 51;
+
+  @include medium {
+    margin: 10rem 6rem;
+  }
+  @include large {
+    margin: 5rem 10rem;
+  }
+
+  .about__title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    @include medium {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+    @include large {
+      font-size: 3.5rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.about__greetings {
+  color: $alabaster;
+  font-size: 2rem;
+}
+
+.about__text {
+  font-size: 1rem;
+  @include medium {
+    font-size: 1.2rem;
+  }
+  @include large {
+    font-size: 1.5rem;
+  }
+}
