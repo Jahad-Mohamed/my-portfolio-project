@@ -17,10 +17,11 @@
   @include medium {
     min-width: 40%;
     max-width: 50%;
-    margin: 10rem 4rem;
+    margin: 26rem 4rem;
 
     @include large {
       max-width: 30%;
+      margin: 26rem 4rem;
     }
   }
 }
@@ -154,10 +155,10 @@
   animation: line-anim 2s ease forwards 4.3s;
 }
 
-// #logo {
-//   position: relative;
-//   animation: fill 0.5s ease forwards 4.8s;
-// }
+#logo {
+  position: relative;
+  animation: fill 0.5s ease forwards 4.8s;
+}
 
 @keyframes line-anim {
   to {
@@ -165,11 +166,8 @@
   }
 }
 
-// @keyframes fill {
-//   from {
-//     fill: transparent;
-//   }
-//   to {
-//     fill: white;
-//   }
-// }
+@keyframes fill {
+  to {
+    fill: white;
+  }
+}
