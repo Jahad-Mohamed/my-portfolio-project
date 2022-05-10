@@ -21,15 +21,31 @@ const Contact = () => {
           </p>
           <div className="icon__section">
             <img src={Phone} alt="Location" className="icon" />
-            <span className="icon__text">+44 78428 92476</span>
+            <span className="icon__text">
+              <a className="contact" href="tel:447842892476">
+                +44 7842 892476
+              </a>
+            </span>
           </div>
           <div className="icon__section">
             <img src={Email} alt="Email" className="icon" />
-            <span className="icon__text">jaybannks@gmail.com</span>
+
+            <span className="icon__text">
+              <a className="contact" href="mailto:jaybannks@gmail.com">
+                jaybannks@gmail.com
+              </a>
+            </span>
           </div>
           <div className="icon__section">
             <img src={Location} alt="Location" className="icon" />
-            <span className="icon__text">Junction Rd, London, N19 5LF</span>
+            <span className="icon__text">
+              <a
+                className="contact"
+                href="https://goo.gl/maps/vRrmBGV2hUpgAYj88"
+              >
+                Junction Rd, London, N19 5LF
+              </a>
+            </span>
           </div>
           <div className="social-media">
             <a href="#" className="icon-circle">
