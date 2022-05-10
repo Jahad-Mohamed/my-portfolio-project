@@ -7,7 +7,9 @@
   justify-content: center;
   align-items: center;
   color: white;
+  opacity: 0.96;
 
+  // background-color: rgb(51, 33, 33);
   &__title {
     display: flex;
     flex-direction: column;
@@ -16,12 +18,17 @@
   }
   &__container {
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
     overflow: hidden;
     padding: 1rem;
     border-radius: 0.4rem;
     backdrop-filter: blur(25px);
     margin: 0rem 2rem;
+    @include small {
+      flex-direction: column;
+    }
   }
   &__info {
     width: 100%;
@@ -60,7 +67,56 @@
   }
 }
 
+/* Rightside Contact */
+
 .contact {
   color: white;
   text-decoration: none;
+  &__form-container {
+    border-radius: 0.4rem;
+    background-color: #1f1f38;
+    // opacity: 0.9;
+    color: #ffffff;
+    flex: 0 1 50%;
+    padding: 3.2rem;
+    @include small {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.form {
+  &__box {
+    width: 100%;
+    height: 4vh;
+    margin: 1rem 0rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0.2rem;
+    padding-left: 1rem;
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
+.message {
+  height: 15vh;
+  padding-left: 0.8rem;
+}
+
+textarea::placeholder,
+input::placeholder {
+  padding-left: -1rem;
+  padding-top: 3rem;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.btn:hover {
+  background-color: white;
+  color: $black;
 }
