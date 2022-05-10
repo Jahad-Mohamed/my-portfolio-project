@@ -53,9 +53,56 @@ const Contact = () => {
             </a>
           </div>
         </div>
-      </div>
+        <div className="contact__form-container form">
+          <h4 className="form__title">Contact Form</h4>
+          <form action="" method="get" className="form">
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input
+                  type="text"
+                  class="form__box"
+                  placeholder="Name"
+                  name="name"
+                  required
+                />
+              </div>
+            </div>
 
-      <form action=""></form>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input
+                  type="email"
+                  class="form__box"
+                  id="email"
+                  placeholder="Email"
+                  name="email"
+                  required
+                />
+              </div>
+            </div>
+
+            <textarea
+              class="form__box message"
+              rows="10"
+              placeholder="Message"
+              name="message"
+              required
+            ></textarea>
+
+            <button
+              class="form__box btn btn-primary send-button"
+              id="submit"
+              type="submit"
+              value="Send"
+            >
+              <div class="alt-send-button">
+                <i class="fa fa-paper-plane"></i>
+                <span class="send-text">SEND</span>
+              </div>
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };

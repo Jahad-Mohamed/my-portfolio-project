@@ -7,13 +7,16 @@
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: rgba(50, 50, 50, 0.9);
+  background-color: #1f1f38;
   margin: 0rem 3rem;
   line-height: 2;
   z-index: 51;
+  width: 90%;
+  opacity: 0.96;
+  border-radius: 0.4rem;
 
   @include medium {
-    margin: 0rem 7rem;
+    width: 90%;
   }
   @include large {
   }
@@ -43,10 +46,10 @@
   position: relative;
 
   @include medium {
-    width: 39rem;
+    width: auto;
   }
   @include large {
-    width: 54rem;
+    width: auto;
   }
 }
 
