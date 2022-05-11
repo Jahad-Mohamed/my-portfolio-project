@@ -15,6 +15,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 0rem 3rem;
+    @include medium {
+      padding: 0rem 10rem;
+    }
+    @include large {
+      font-weight: 500;
+      font-size: 1.2rem;
+      padding: 0rem 35rem;
+    }
   }
   &__container {
     display: flex;
@@ -39,9 +49,11 @@
     padding: 3.2rem;
     @include medium {
       flex: 0 1 50%;
+      margin-right: 1rem;
     }
     @include large {
       flex: 0 1 40%;
+      margin-right: 1rem;
     }
     h4 {
       font-size: 2rem;
@@ -105,12 +117,12 @@
 .message {
   height: 15vh;
   padding-left: 0.8rem;
+  padding-top: 0.8rem;
 }
 
 textarea::placeholder,
 input::placeholder {
   padding-left: -1rem;
-  padding-top: 3rem;
   font-size: 12px;
   font-family: "Poppins", sans-serif;
   color: white;
