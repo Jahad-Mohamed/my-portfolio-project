@@ -10,6 +10,15 @@ import Projects from "./src/component/Projects/Projects";
 import Testimonials from "./src/component/Testimonials/Testimonials";
 import Contact from "./src/component/Contact/Contact";
 import Footer from "./src/component/Footer/Footer";
+import ThankYou from "./src/component/thankYou";
+
+/* HEX COLOUR:
+GOLD: 0xffd700
+SLIVER: 0xc0c0c0
+BLACK:  0x00000
+DARK PURPLE: 0x301934
+
+*/
 
 const scene = new THREE.Scene();
 
@@ -34,7 +43,7 @@ renderer.render(scene, camera);
 // Torus - Geometry Shape
 const geometry = new THREE.TorusGeometry(10, 3, 100, 16);
 const material = new THREE.MeshStandardMaterial({
-  color: 0xc70039,
+  color: 0x301934,
 });
 const torusKnot = new THREE.Mesh(geometry, material);
 
@@ -56,12 +65,12 @@ scene.add(pointLight, ambientLight);
 
 function addStar() {
   const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-  const material = new THREE.MeshStandardMaterial({ color: 0xffd700 });
+  const material = new THREE.MeshStandardMaterial({ color: 0xc0c0c0 });
   const star = new THREE.Mesh(geometry, material);
 
   const [x, y, z] = Array(3)
     .fill()
-    .map(() => THREE.MathUtils.randFloatSpread(100));
+    .map(() => THREE.MathUtils.randFloatSpread(500));
 
   star.position.set(x, y, z);
   scene.add(star);

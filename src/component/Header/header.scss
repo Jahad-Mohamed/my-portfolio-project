@@ -8,7 +8,7 @@
   align-content: center;
   align-items: left;
   color: white;
-  background-color: rgba(50, 50, 50, 0.8);
+  background-color: #1f1f38;
   width: 90%;
   margin: 5rem 1.5rem;
   line-height: 1.5;
@@ -21,7 +21,7 @@
 
     @include large {
       max-width: 30%;
-      margin: 26rem 4rem;
+      margin: 23rem 4rem;
     }
   }
 }
@@ -58,6 +58,8 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  margin: 1rem 0rem 1rem 0rem;
+
   @include medium {
     font-size: 1.4rem;
   }
@@ -67,14 +69,30 @@
   }
 }
 
+.hi {
+  margin: 1rem 0rem 1rem 0rem;
+  color: $alabaster;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  @include medium {
+    font-size: 1.4rem;
+  }
+
+  @include large {
+    font-size: 1.6rem;
+  }
+}
+
 .header__greetingsOne {
   font-size: 1rem;
 }
 
 .path-1 {
   animation: 2s ease-in 1s;
-  stroke-dasharray: 144px;
-  stroke-dashoffset: 144px;
+  stroke-dasharray: 143px;
+  stroke-dashoffset: 143px;
   animation: line-anim 2s ease forwards;
 }
 
@@ -157,7 +175,7 @@
 
 #logo {
   position: relative;
-  animation: fill 0.5s ease forwards 4.8s;
+  animation: fill 0.9s ease forwards 4.8s;
 }
 
 @keyframes line-anim {
@@ -167,6 +185,9 @@
 }
 
 @keyframes fill {
+  from {
+    fill: transparent !important;
+  }
   to {
     fill: white;
   }

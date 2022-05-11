@@ -9,7 +9,11 @@ const Contact = () => {
     <div className="contact">
       <div className="contact__title">
         <h1>Contact</h1>
-        <p>lorem ipsum dolor sit amet, consectetur</p>
+        <p>
+          I’m currently looking for junior developer opportunities, my inbox is
+          always open. Whether you have a question or just want to say hi, I’ll
+          try my best to get back to you!
+        </p>
       </div>
 
       <div className="contact__container">
@@ -17,7 +21,7 @@ const Contact = () => {
           <h4>Contact Information</h4>
           <p>
             Feel free to contact me from the details listed below, alternatively
-            you can fill in a form and will get back to you within 24 hours.
+            you can fill in the form and I will get back to you within 24 hours.
           </p>
           <div className="icon__section">
             <img src={Phone} alt="Location" className="icon" />
@@ -55,30 +59,37 @@ const Contact = () => {
         </div>
         <div className="contact__form-container form">
           <h4 className="form__title">Contact Form</h4>
-          <form action="" method="get" className="form">
+          <form
+            action="https://formsubmit.co/jahadmohamed@live.co.uk"
+            method="POST"
+            className="form"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://yourdomain.co/thanks.html"
+            />
+
             <div class="form-group">
-              <div class="col-sm-12">
-                <input
-                  type="text"
-                  class="form__box"
-                  placeholder="Name"
-                  name="name"
-                  required
-                />
-              </div>
+              <input
+                type="text"
+                class="form__box"
+                placeholder="Name"
+                name="name"
+                required
+              />
             </div>
 
             <div class="form-group">
-              <div class="col-sm-12">
-                <input
-                  type="email"
-                  class="form__box"
-                  id="email"
-                  placeholder="Email"
-                  name="email"
-                  required
-                />
-              </div>
+              <input
+                type="email"
+                class="form__box"
+                id="email"
+                placeholder="Email"
+                name="email"
+                required
+              />
             </div>
 
             <textarea
