@@ -5,20 +5,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
   align-items: center;
   color: white;
   background-color: #1f1f38;
-  margin: 0rem 3rem;
+  margin: 0rem 1rem;
   line-height: 2;
   z-index: 51;
-  width: 90%;
   opacity: 0.96;
   border-radius: 0.4rem;
 
   @include medium {
-    width: 90%;
+    margin: 0rem 3rem;
   }
   @include large {
+    margin: 0rem 10rem;
   }
 }
 
@@ -38,7 +39,7 @@
 }
 
 .skills__icon-container {
-  width: 18rem;
+  // width: 18rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -55,14 +56,14 @@
 
 .skills__icons {
   margin: 0.5rem;
-  width: 5rem;
-  height: 5rem;
+  width: 3rem;
+  height: 3rem;
   @include medium {
-    width: 7rem;
-    height: 7rem;
+    width: 5rem;
+    height: 5rem;
   }
   @include large {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
   }
 }

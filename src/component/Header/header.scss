@@ -8,7 +8,7 @@
   align-content: center;
   align-items: left;
   color: white;
-  background-color: #1f1f38;
+  // background-color: #1f1f38;
   width: 90%;
   margin: 5rem 1.5rem;
   line-height: 1.5;
@@ -59,7 +59,7 @@
   justify-content: center;
   align-content: center;
   margin: 1rem 0rem 1rem 0rem;
-  animation: developer 7s ease-in;
+  animation: developer 5.5s ease-in;
   @include medium {
     font-size: 1.4rem;
   }
@@ -94,89 +94,89 @@
   animation: 2s ease-in 1s;
   stroke-dasharray: 143px;
   stroke-dashoffset: 143px;
-  animation: line-anim 2s ease forwards 1s;
+  animation: line-anim 2s ease forwards 0.6s;
 }
 
 .path-2 {
   animation: 2s ease-in 1s;
   stroke-dasharray: 208px;
   stroke-dashoffset: 208px;
-  animation: line-anim 2s ease forwards 1.4s;
+  animation: line-anim 2s ease forwards 1s;
 }
 
 .path-3 {
   animation: 2s ease-in 1s;
   stroke-dasharray: 213px;
   stroke-dashoffset: 213px;
-  animation: line-anim 2s ease forwards 1.8s;
+  animation: line-anim 2s ease forwards 1.4s;
 }
 
 .path-4 {
   animation: 2s ease-in 1s;
   stroke-dasharray: 208px;
   stroke-dashoffset: 208px;
-  animation: line-anim 2s ease forwards 2.2s;
+  animation: line-anim 2s ease forwards 1.8s;
 }
 
 .path-5 {
   animation: 2s ease-in 1s;
   stroke-dasharray: 232px;
   stroke-dashoffset: 232px;
-  animation: line-anim 2s ease forwards 2.6s;
+  animation: line-anim 2s ease forwards 2.2s;
 }
 
 .path-6 {
   animation: 2s ease-in 1s;
   stroke-dasharray: 327px;
   stroke-dashoffset: 327px;
-  animation: line-anim 2s ease forwards 3s;
+  animation: line-anim 2s ease forwards 2.6s;
 }
 
 .path-7 {
   animation: 2s ease-in 1s;
   stroke-dasharray: 178px;
   stroke-dashoffset: 178px;
-  animation: line-anim 2s ease forwards 3.4s;
+  animation: line-anim 2s ease forwards 2.9s;
 }
 
 .path-8 {
   animation: 2s ease-in 1s;
   stroke-dasharray: 213px;
   stroke-dashoffset: 213px;
-  animation: line-anim 2s ease forwards 3.8s;
+  animation: line-anim 2s ease forwards 3.2s;
 }
 
 .path-9 {
   animation: 2s ease-in 1s;
   stroke-dasharray: 208px;
   stroke-dashoffset: 208px;
-  animation: line-anim 2s ease forwards 4.2s;
+  animation: line-anim 2s ease forwards 3.6s;
 }
 
 .path-10 {
   animation: 2s ease-in 1s;
   stroke-dasharray: 292px;
   stroke-dashoffset: 292px;
-  animation: line-anim 2s ease forwards 4.7s;
+  animation: line-anim 2s ease forwards 3.9s;
 }
 
 .path-11 {
   animation: 2s ease-in 1s;
   stroke-dasharray: 210px;
   stroke-dashoffset: 210px;
-  animation: line-anim 2s ease forwards 5s;
+  animation: line-anim 2s ease forwards 4.3s;
 }
 
 .path-12 {
   animation: 2s ease-in 1s;
   stroke-dasharray: 232px;
   stroke-dashoffset: 232px;
-  animation: line-anim 2s ease forwards 5.3s;
+  animation: line-anim 2s ease forwards 4.6s;
 }
 
 #logo {
   position: relative;
-  animation: fill 0.9s ease forwards 5.8s;
+  animation: fill 0.9s ease forwards 4.9s;
 }
 
 @keyframes line-anim {
@@ -196,7 +196,7 @@
 
 @keyframes hi {
   0% {
-    transform: translateY(-500%);
+    transform: translateY(-1000%);
   }
   100% {
     transform: translateY(0%);

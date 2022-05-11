@@ -15,11 +15,10 @@ const About = () => {
       <p className="about__text">
         In 2022 I graduated from BrainStation’s full-stack web development
         diploma program, where I strengthened my skills in HTML, CSS, and
-        Javascript in a challenging bootcamp timeframe. I am most familiar with
-        ReactJS as a front-end framework and NodeJS and ExpressJS as back-end
-        frameworks, but have also completed various personal projects using
-        skills in other technologies such as Nextjs, 3js React Native and
-        Firebase.
+        Javascript in a challenging bootcamp. I am most familiar with ReactJS as
+        a front-end framework and NodeJS and ExpressJS as back-end frameworks,
+        but have also completed various personal projects using skills in other
+        technologies such as Nextjs, 3js React Native and Firebase.
       </p>
     </section>
   );
