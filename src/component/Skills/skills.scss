@@ -1,6 +1,11 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/breakpoints" as *;
 
+.skills__container {
+  height: 100vh;
+  width: 100vw;
+}
+
 .skills__section {
   display: flex;
   flex-direction: column;
@@ -9,17 +14,20 @@
   align-items: center;
   color: white;
   background-color: #1f1f38;
-  margin: 0rem 1rem;
+  margin: 0rem 3rem;
   line-height: 2;
   z-index: 51;
   opacity: 0.96;
   border-radius: 0.4rem;
+  margin: 5rem 1rem;
 
   @include medium {
-    margin: 0rem 3rem;
+    margin: 10rem 4rem;
+    padding: 1rem;
   }
   @include large {
-    margin: 0rem 10rem;
+    margin: 5rem 7rem;
+    padding: 2rem;
   }
 }
 
@@ -56,8 +64,8 @@
 
 .skills__icons {
   margin: 0.5rem;
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
   @include medium {
     width: 5rem;
     height: 5rem;

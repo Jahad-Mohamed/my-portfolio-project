@@ -1,8 +1,8 @@
 import React from "react";
 import "./contact.scss";
-import Phone from "../../../public/ContactIcon/phone.png";
-import Email from "../../../public/ContactIcon/email.png";
-import Location from "../../../public/ContactIcon/location.png";
+import Phone from "/ContactIcon/phone.png";
+import Email from "/ContactIcon/email.png";
+import Location from "/ContactIcon/location.png";
 
 const Contact = () => {
   return (
