@@ -125,9 +125,9 @@ function moveCamera() {
   moon.rotation.y += 0.075;
   moon.rotation.z += 0.05;
 
-  jay.rotation.x += 0.05;
-  jay.rotation.y += 0.01;
-  jay.rotation.z += 0.01;
+  jay.rotation.x += 0.01;
+  jay.rotation.y += 0.007;
+  jay.rotation.z += 0.06;
 
   camera.position.z = t * -0.01;
   camera.position.x = t * -0.0002;
