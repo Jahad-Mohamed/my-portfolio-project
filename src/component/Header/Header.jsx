@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.scss";
+import Zoom from "react-reveal/Zoom";
 
 const Header = () => {
   const logo = document.querySelectorAll("#logo path");
@@ -10,7 +11,9 @@ const Header = () => {
 
   return (
     <section className="header__section ">
-      <p className="hi"> HI THERE 👋🏾, I'M ... </p>
+      <Zoom top>
+        <p className="hi"> HI THERE 👋🏾, I'M ... </p>
+      </Zoom>
 
       {/* <p className="header__greetings">Hello World</p> */}
       <div className="header__name-section">

@@ -10,7 +10,7 @@ import Projects from "./src/component/Projects/Projects";
 import Testimonials from "./src/component/Testimonials/Testimonials";
 import Contact from "./src/component/Contact/Contact";
 import Footer from "./src/component/Footer/Footer";
-import ThankYou from "./src/component/thankYou";
+import Zoom from "react-reveal/Zoom";
 
 /* HEX COLOUR:
 GOLD: 0xffd700
@@ -65,7 +65,7 @@ scene.add(pointLight, ambientLight);
 
 function addStar() {
   const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-  const material = new THREE.MeshStandardMaterial({ color: 0xc0c0c0 });
+  const material = new THREE.MeshStandardMaterial({ color: 0xffd700 });
   const star = new THREE.Mesh(geometry, material);
 
   const [x, y, z] = Array(3)
@@ -76,7 +76,7 @@ function addStar() {
   scene.add(star);
 }
 
-Array(100).fill().forEach(addStar);
+Array(500).fill().forEach(addStar);
 
 // Background
 const spaceTexture = new THREE.TextureLoader().load(
@@ -155,8 +155,13 @@ function App() {
     <div className="app__section">
       <Nav />
       <Header />
-      <About />
-      <Skills />
+      <Zoom top duration={1500}>
+        <About />
+      </Zoom>
+      <Zoom bottom duration={1500}>
+        <Skills />
+      </Zoom>
+
       <Projects />
       <Testimonials />
       <Contact />
