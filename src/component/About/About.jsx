@@ -15,11 +15,8 @@ const About = () => {
             I'm a web developer focused to building creative, dynamtic react
             applications and continuing to develop new skills in web
             development. Currently looking for new employment opportunities{" "}
-          </p>{" "}
-        </Rotate>
-        <br />
-        <LightSpeed right delay={1500} duration={600}>
-          <p className="about__text">
+            <br />
+            <br />
             In 2022 I graduated from BrainStation’s full-stack web development
             diploma program, where I strengthened my skills in HTML, CSS, and
             Javascript in a challenging bootcamp. I am most familiar with
@@ -27,8 +24,8 @@ const About = () => {
             back-end frameworks, but have also completed various personal
             projects using skills in other technologies such as Nextjs, 3js
             React Native and Firebase.
-          </p>
-        </LightSpeed>
+          </p>{" "}
+        </Rotate>
       </section>
     </div>
   );

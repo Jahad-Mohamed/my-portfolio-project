@@ -3,7 +3,14 @@
 
 .container-contact {
   width: 100vw;
-  padding-top: 4rem;
+  height: 100vh;
+  padding-top: 5rem;
+  @include medium {
+    padding-top: 8rem;
+  }
+  @include large {
+    padding-top: 10rem;
+  }
 }
 
 .contact {
@@ -32,13 +39,17 @@
   }
   &__container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     overflow: hidden;
     border-radius: 0.4rem;
     backdrop-filter: blur(25px);
-    @include small {
+    @include medium {
       flex-direction: column;
+      margin: 1rem 1rem;
+    }
+    @include large {
+      flex-direction: row;
+      margin: 1rem 1rem;
     }
   }
   &__info {
@@ -49,15 +60,18 @@
     flex: 0 1 100%;
     padding: 1rem;
     font-size: 0.8rem;
+    margin-bottom: 1rem;
 
     @include medium {
       flex: 0 1 50%;
       margin-right: 1rem;
       padding: 3.2rem;
+      font-size: 1.2rem;
     }
     @include large {
-      flex: 0 1 40%;
-      margin-right: 1rem;
+      flex: 0 1 50%;
+      margin-right: 2rem;
+      font-size: 1.6rem;
     }
     h4 {
       font-size: 1.5rem;
@@ -69,6 +83,9 @@
     .p {
       font-size: 0.8rem;
       margin: 1.5rem 0rem;
+      @include medium {
+        font-size: 1.3rem;
+      }
     }
   }
 }
@@ -95,12 +112,15 @@
   &__form-container {
     border-radius: 0.4rem;
     background-color: #1f1f38;
-    // opacity: 0.9;
+    padding: 3.2rem;
     color: #ffffff;
     flex: 0 1 50%;
     padding: 1.2rem;
     @include small {
       margin-top: 2rem;
+    }
+    @include large {
+      padding: 3.2rem;
     }
   }
 }
