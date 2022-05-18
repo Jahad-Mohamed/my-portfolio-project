@@ -6,7 +6,7 @@
   width: 100vw;
   padding-top: 0.9rem;
   @include medium {
-    padding-top: 6rem;
+    padding-top: 1rem;
   }
   @include large {
     padding-top: 10rem;
@@ -42,7 +42,6 @@
   color: white;
   font-size: 2rem;
   font-weight: 700;
-
   @include medium {
     font-size: 3rem;
     font-weight: 700;

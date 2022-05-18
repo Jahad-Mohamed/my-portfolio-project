@@ -16,21 +16,25 @@
 .project__container {
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+
   align-items: center;
   color: white;
   border-radius: 0.4rem;
   opacity: 0.9;
   line-height: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .project-title {
   font-size: 2rem;
   color: white;
   background-color: #1f1f38;
   border-radius: 0.4rem;
-  margin: 0.2rem;
   @include flexCenter;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 2rem;
 }
 
 .project {
@@ -47,10 +51,15 @@
   height: 100%;
   width: 30%;
   @include flexCenter;
-  height: 100%;
-  width: 80%;
+  height: 30vh;
+  width: 25vh;
+  // max-height: 30vh;
+  // max-width: 25vh;
+  @include medium {
+    height: 25vh;
+    width: 20vh;
+  }
 }
-
 #container-card {
   background-color: #1f1f38;
   border: 2px solid red;
@@ -60,6 +69,7 @@
   @include flexCenter;
   flex-direction: column;
   @include medium {
+    max-width: 40vh;
     margin: 0.8rem 1rem;
   }
 }
@@ -71,7 +81,10 @@
 
 .container-card__description {
   font-size: 0.7rem;
-  padding: 0rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  @include medium {
+  }
 }
 
 .container-card__link {
