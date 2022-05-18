@@ -1,0 +1,84 @@
+@import "../../styles/partials/mixin";
+@import "../../styles/partials/breakpoints";
+
+.project {
+  height: 100%;
+  width: 100vw;
+  padding-top: 5rem;
+}
+
+.project__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  border-radius: 0.4rem;
+  opacity: 0.9;
+  line-height: 2;
+}
+.project-title {
+  font-size: 2rem;
+  color: white;
+  background-color: #1f1f38;
+  border-radius: 0.4rem;
+  margin: 0.2rem;
+  @include flexCenter;
+}
+
+.project {
+  &__containers {
+    @include medium {
+      @include flexCenter;
+      flex-direction: row;
+      margin: 0.5rem 1rem;
+    }
+  }
+}
+
+.container-card__image {
+  height: 100%;
+  width: 30%;
+  @include flexCenter;
+  height: 100%;
+  width: 80%;
+}
+
+#container-card {
+  background-color: #1f1f38;
+  border: 2px solid red;
+  border-radius: 0.4rem;
+  margin: 0.8rem 0.2rem;
+
+  @include flexCenter;
+  flex-direction: column;
+  @include medium {
+    margin: 0.8rem 1rem;
+  }
+}
+
+.container-card__title {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.container-card__description {
+  font-size: 0.7rem;
+  padding: 0rem 0.5rem;
+}
+
+.container-card__link {
+  min-height: 5vh;
+  max-height: 6vh;
+  width: 60%;
+  margin: 0.8rem;
+  border: 1px solid white;
+  background-color: transparent;
+  backdrop-filter: blur(25px);
+  border-radius: 0.4rem;
+}
+
+a {
+  color: white;
+}

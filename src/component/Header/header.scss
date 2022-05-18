@@ -1,0 +1,228 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/breakpoints" as *;
+@import "../../styles/partials/mixin";
+
+.header__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: left;
+  color: white;
+  // background-color: #1f1f38;
+  width: 100%;
+  // margin: 20rem 1.5rem;
+  line-height: 1.5;
+  z-index: 50;
+  height: 100vh;
+  @include medium {
+    min-width: 40%;
+    max-width: 50%;
+    // margin: 26rem 4rem;
+
+    @include large {
+      max-width: 30%;
+      // margin: 23rem 4rem;
+    }
+  }
+}
+
+.header__my-name {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+
+  @include medium {
+    font-size: 2.3rem;
+  }
+
+  @include large {
+    font-size: 3rem;
+  }
+}
+
+.header__name-section {
+  margin: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  @include medium {
+  }
+
+  @include large {
+  }
+}
+.header__greetings {
+  color: $alabaster;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 1rem 0rem 1rem 0rem;
+  animation: developer 4s ease-in;
+  @include medium {
+    font-size: 1.4rem;
+  }
+
+  @include large {
+    font-size: 2rem;
+  }
+}
+
+.hi {
+  margin: 1rem 0rem 1rem 0rem;
+  color: $alabaster;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  animation: hi 500ms ease-in;
+  @include medium {
+    font-size: 1.4rem;
+  }
+
+  @include large {
+    font-size: 1.6rem;
+  }
+}
+
+.header__greetingsOne {
+  font-size: 1rem;
+}
+
+.path-1 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 143px;
+  stroke-dashoffset: 143px;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+
+.path-2 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 208px;
+  stroke-dashoffset: 208px;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+
+.path-3 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 213px;
+  stroke-dashoffset: 213px;
+  animation: line-anim 2s ease forwards 0.9s;
+}
+
+.path-4 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 208px;
+  stroke-dashoffset: 208px;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+
+.path-5 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 232px;
+  stroke-dashoffset: 232px;
+  animation: line-anim 2s ease forwards 1.4s;
+}
+
+.path-6 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 327px;
+  stroke-dashoffset: 327px;
+  animation: line-anim 2s ease forwards 1.6s;
+}
+
+.path-7 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 178px;
+  stroke-dashoffset: 178px;
+  animation: line-anim 2s ease forwards 1.8s;
+}
+
+.path-8 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 213px;
+  stroke-dashoffset: 213px;
+  animation: line-anim 2s ease forwards 2s;
+}
+
+.path-9 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 208px;
+  stroke-dashoffset: 208px;
+  animation: line-anim 2s ease forwards 2.3s;
+}
+
+.path-10 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 292px;
+  stroke-dashoffset: 292px;
+  animation: line-anim 2s ease forwards 2.6s;
+}
+
+.path-11 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 210px;
+  stroke-dashoffset: 210px;
+  animation: line-anim 2s ease forwards 2.8s;
+}
+
+.path-12 {
+  animation: 2s ease-in 1s;
+  stroke-dasharray: 232px;
+  stroke-dashoffset: 232px;
+  animation: line-anim 2s ease forwards 3s;
+}
+
+#logo {
+  position: relative;
+  animation: fill 0.9s ease forwards 3.3s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent !important;
+  }
+  to {
+    fill: white;
+  }
+}
+
+@keyframes hi {
+  0% {
+    transform: translateY(-1000%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes developer {
+  0% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.icon-container {
+  @include flexCenter;
+}
+
+.header-icon {
+  height: 4rem;
+  width: 4rem;
+  margin: 0.5rem 1rem;
+}

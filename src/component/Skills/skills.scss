@@ -1,0 +1,78 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/breakpoints" as *;
+
+.skills__container {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 0.9rem;
+}
+
+.skills__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: white;
+  background-color: #1f1f38;
+  margin: 0rem 3rem;
+  line-height: 2;
+  z-index: 51;
+  opacity: 0.96;
+  border-radius: 0.4rem;
+  margin: 5rem 1rem;
+
+  @include medium {
+    margin: 10rem 4rem;
+    padding: 1rem;
+  }
+  @include large {
+    margin: 5rem 7rem;
+    padding: 2rem;
+  }
+}
+
+.skills__title {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+
+  @include medium {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  @include large {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+}
+
+.skills__icon-container {
+  // width: 18rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  justify-items: center;
+  position: relative;
+
+  @include medium {
+    width: auto;
+  }
+  @include large {
+    width: auto;
+  }
+}
+
+.skills__icons {
+  margin: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+  @include medium {
+    width: 5rem;
+    height: 5rem;
+  }
+  @include large {
+    width: 8rem;
+    height: 8rem;
+  }
+}
