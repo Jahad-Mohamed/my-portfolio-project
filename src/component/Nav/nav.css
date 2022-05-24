@@ -1,0 +1,59 @@
+/* media query for mobile */
+/* media query for tablet */
+/* media query for landscape, medium pixel density desktops */
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0.4rem 0.8rem;
+  right: 1%;
+  top: 1%;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: fixed;
+}
+@media only screen and (min-width: 668px) {
+  nav {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    flex-direction: row;
+    right: 1%;
+    bottom: 1%;
+  }
+}
+
+nav a {
+  border-radius: 50%;
+  color: rgb(201, 201, 253);
+  font-size: 1.5rem;
+}
+@media only screen and (min-width: 668px) {
+  nav a {
+    padding: 0.8rem;
+    border-radius: 50%;
+    font-size: 3rem;
+  }
+}
+
+nav a:hover {
+  font-size: 2rem;
+  color: white;
+}
+@media only screen and (min-width: 668px) {
+  nav a:hover {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    font-size: 3.2rem;
+  }
+}
+
+nav a.active {
+  color: rgb(250, 250, 250);
+}/*# sourceMappingURL=nav.css.map */

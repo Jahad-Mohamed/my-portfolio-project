@@ -1,0 +1,286 @@
+/* media query for mobile */
+/* media query for tablet */
+/* media query for landscape, medium pixel density desktops */
+.header__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: left;
+  color: white;
+  width: 100%;
+  line-height: 1.5;
+  z-index: 50;
+  height: 100vh;
+}
+@media only screen and (min-width: 668px) {
+  .header__section {
+    min-width: 40%;
+    max-width: 50%;
+  }
+}
+@media only screen and (min-width: 668px) and (min-width: 1280px) {
+  .header__section {
+    max-width: 30%;
+  }
+}
+
+.header__my-name {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+@media only screen and (min-width: 668px) {
+  .header__my-name {
+    font-size: 2.3rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .header__my-name {
+    font-size: 3rem;
+  }
+}
+
+.header__name-section {
+  margin: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.header__greetings {
+  color: #fafafa;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 1rem 0rem 1rem 0rem;
+  -webkit-animation: developer 4s ease-in;
+          animation: developer 4s ease-in;
+}
+@media only screen and (min-width: 668px) {
+  .header__greetings {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .header__greetings {
+    font-size: 2rem;
+  }
+}
+
+.hi {
+  margin: 1rem 0rem 1rem 0rem;
+  color: #fafafa;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  -webkit-animation: hi 500ms ease-in;
+          animation: hi 500ms ease-in;
+}
+@media only screen and (min-width: 668px) {
+  .hi {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hi {
+    font-size: 1.6rem;
+  }
+}
+
+.header__greetingsOne {
+  font-size: 1rem;
+}
+
+.path-1 {
+  -webkit-animation: 2s ease-in 1s;
+          animation: 2s ease-in 1s;
+  stroke-dasharray: 143px;
+  stroke-dashoffset: 143px;
+  -webkit-animation: line-anim 2s ease forwards 0.3s;
+          animation: line-anim 2s ease forwards 0.3s;
+}
+
+.path-2 {
+  -webkit-animation: 2s ease-in 1s;
+          animation: 2s ease-in 1s;
+  stroke-dasharray: 208px;
+  stroke-dashoffset: 208px;
+  -webkit-animation: line-anim 2s ease forwards 0.6s;
+          animation: line-anim 2s ease forwards 0.6s;
+}
+
+.path-3 {
+  -webkit-animation: 2s ease-in 1s;
+          animation: 2s ease-in 1s;
+  stroke-dasharray: 213px;
+  stroke-dashoffset: 213px;
+  -webkit-animation: line-anim 2s ease forwards 0.9s;
+          animation: line-anim 2s ease forwards 0.9s;
+}
+
+.path-4 {
+  -webkit-animation: 2s ease-in 1s;
+          animation: 2s ease-in 1s;
+  stroke-dasharray: 208px;
+  stroke-dashoffset: 208px;
+  -webkit-animation: line-anim 2s ease forwards 1.2s;
+          animation: line-anim 2s ease forwards 1.2s;
+}
+
+.path-5 {
+  -webkit-animation: 2s ease-in 1s;
+          animation: 2s ease-in 1s;
+  stroke-dasharray: 232px;
+  stroke-dashoffset: 232px;
+  -webkit-animation: line-anim 2s ease forwards 1.4s;
+          animation: line-anim 2s ease forwards 1.4s;
+}
+
+.path-6 {
+  -webkit-animation: 2s ease-in 1s;
+          animation: 2s ease-in 1s;
+  stroke-dasharray: 327px;
+  stroke-dashoffset: 327px;
+  -webkit-animation: line-anim 2s ease forwards 1.6s;
+          animation: line-anim 2s ease forwards 1.6s;
+}
+
+.path-7 {
+  -webkit-animation: 2s ease-in 1s;
+          animation: 2s ease-in 1s;
+  stroke-dasharray: 178px;
+  stroke-dashoffset: 178px;
+  -webkit-animation: line-anim 2s ease forwards 1.8s;
+          animation: line-anim 2s ease forwards 1.8s;
+}
+
+.path-8 {
+  -webkit-animation: 2s ease-in 1s;
+          animation: 2s ease-in 1s;
+  stroke-dasharray: 213px;
+  stroke-dashoffset: 213px;
+  -webkit-animation: line-anim 2s ease forwards 2s;
+          animation: line-anim 2s ease forwards 2s;
+}
+
+.path-9 {
+  -webkit-animation: 2s ease-in 1s;
+          animation: 2s ease-in 1s;
+  stroke-dasharray: 208px;
+  stroke-dashoffset: 208px;
+  -webkit-animation: line-anim 2s ease forwards 2.3s;
+          animation: line-anim 2s ease forwards 2.3s;
+}
+
+.path-10 {
+  -webkit-animation: 2s ease-in 1s;
+          animation: 2s ease-in 1s;
+  stroke-dasharray: 292px;
+  stroke-dashoffset: 292px;
+  -webkit-animation: line-anim 2s ease forwards 2.6s;
+          animation: line-anim 2s ease forwards 2.6s;
+}
+
+.path-11 {
+  -webkit-animation: 2s ease-in 1s;
+          animation: 2s ease-in 1s;
+  stroke-dasharray: 210px;
+  stroke-dashoffset: 210px;
+  -webkit-animation: line-anim 2s ease forwards 2.8s;
+          animation: line-anim 2s ease forwards 2.8s;
+}
+
+.path-12 {
+  -webkit-animation: 2s ease-in 1s;
+          animation: 2s ease-in 1s;
+  stroke-dasharray: 232px;
+  stroke-dashoffset: 232px;
+  -webkit-animation: line-anim 2s ease forwards 3s;
+          animation: line-anim 2s ease forwards 3s;
+}
+
+#logo {
+  position: relative;
+  -webkit-animation: fill 0.9s ease forwards 3.3s;
+          animation: fill 0.9s ease forwards 3.3s;
+}
+
+@-webkit-keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes fill {
+  from {
+    fill: transparent !important;
+  }
+  to {
+    fill: white;
+  }
+}
+@keyframes fill {
+  from {
+    fill: transparent !important;
+  }
+  to {
+    fill: white;
+  }
+}
+@-webkit-keyframes hi {
+  0% {
+    transform: translateY(-1000%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes hi {
+  0% {
+    transform: translateY(-1000%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes developer {
+  0% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes developer {
+  0% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-icon {
+  height: 4rem;
+  width: 4rem;
+  margin: 0.5rem 1rem;
+}/*# sourceMappingURL=header.css.map */
