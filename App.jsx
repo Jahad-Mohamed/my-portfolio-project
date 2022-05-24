@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./src/styles/app.scss";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import Header from "./src/component/Header/Header";
