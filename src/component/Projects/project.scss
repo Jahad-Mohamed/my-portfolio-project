@@ -2,21 +2,32 @@
 @import "../../styles/partials/breakpoints";
 
 .project {
-  height: 100%;
+  height: auto;
   width: 100vw;
   padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @include medium {
-    padding-top: 8rem;
   }
   @include large {
-    padding-top: 10rem;
+  }
+}
+
+.project-section {
+  border: 2px solid red;
+
+  @include medium {
+    width: 90%;
+  }
+  @include large {
+    width: 80%;
   }
 }
 
 .project__container {
   height: 100%;
   width: 100%;
-
   align-items: center;
   color: white;
   border-radius: 0.4rem;
@@ -24,17 +35,17 @@
   line-height: 2;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .project-title {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
   color: white;
-  background-color: #1f1f38;
   border-radius: 0.4rem;
   @include flexCenter;
   justify-content: center;
   align-items: center;
-  margin: 0rem 2rem;
+  margin: 2rem;
 }
 
 .project {
@@ -49,7 +60,7 @@
 
 .container-card__image {
   height: 100%;
-  width: 30%;
+  width: 30vw;
   @include flexCenter;
   height: 30vh;
   width: 25vh;
@@ -69,7 +80,8 @@
   @include flexCenter;
   flex-direction: column;
   @include medium {
-    max-width: 40vh;
+    min-width: 20%;
+    max-width: 43%;
     margin: 0.8rem 1rem;
   }
 }
@@ -83,8 +95,13 @@
   font-size: 0.7rem;
   display: flex;
   justify-content: center;
+  padding: 0rem 1rem;
   @include medium {
     font-size: 1rem;
+    padding: 0rem 2rem;
+  }
+  @include large {
+    padding: 0rem 4rem;
   }
 }
 

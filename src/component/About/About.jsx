@@ -1,8 +1,6 @@
 import React from "react";
 import "./about.scss";
-import Spin from "react-reveal/Spin";
-import Rotate from "react-reveal/Rotate";
-import LightSpeed from "react-reveal/LightSpeed";
+import Zoom from "react-reveal/Zoom";
 
 const About = () => {
   return (
@@ -10,7 +8,7 @@ const About = () => {
       <section className="about__section about">
         <div className="about__title">About</div>
 
-        <Rotate top left delay={1500} duration={600}>
+        <Zoom left delay={1500} duration={900}>
           <p className="about__text">
             I'm a passionate web developer focused to building creative,
             dynamtic reactive applications and continuing to develop new skills
@@ -25,7 +23,7 @@ const About = () => {
             skills in other technologies such as Nextjs, 3js React Native and
             Firebase.
           </p>{" "}
-        </Rotate>
+        </Zoom>
       </section>
     </div>
   );

@@ -5,6 +5,10 @@
   height: 100vh;
   width: 100vw;
   padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @include medium {
     padding-top: 6rem;
@@ -29,10 +33,11 @@
   z-index: 51;
 
   @include medium {
-    margin: 10rem 4rem;
+    width: 90%;
   }
   @include large {
-    margin: 5rem 7rem;
+    width: 80%;
+    // margin: 5rem 15rem;
   }
 
   .about__title {

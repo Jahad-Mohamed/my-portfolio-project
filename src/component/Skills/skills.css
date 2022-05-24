@@ -2,46 +2,39 @@
 /* media query for tablet */
 /* media query for landscape, medium pixel density desktops */
 .skills__container {
-  height: 100vh;
+  height: auto;
   width: 100vw;
   padding-top: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media only screen and (min-width: 668px) {
   .skills__container {
     padding-top: 1rem;
   }
 }
-@media only screen and (min-width: 1280px) {
-  .skills__container {
-    padding-top: 10rem;
-  }
-}
-
 .skills__section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
   align-items: center;
   color: white;
   background-color: #1f1f38;
-  margin: 0rem 3rem;
   line-height: 2;
-  z-index: 51;
   opacity: 0.96;
   border-radius: 0.4rem;
-  margin: 5rem 1rem;
 }
 @media only screen and (min-width: 668px) {
   .skills__section {
-    margin: 10rem 4rem;
-    padding: 1rem;
+    width: 90%;
+    margin-top: 9rem;
   }
 }
 @media only screen and (min-width: 1280px) {
   .skills__section {
-    margin: 5rem 7rem;
     padding: 2rem;
+    width: 80%;
   }
 }
 

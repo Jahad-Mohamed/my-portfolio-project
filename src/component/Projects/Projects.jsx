@@ -48,8 +48,8 @@ const Projects = () => {
             </div>
             <div className="container-card__title"> Expense Tracker</div>
             <p className="container-card__description">
-              This is an expense tracker created using React. Key features
-              include props, state, hooks.
+              This is an expense tracker created using React. Features include
+              props, state, hooks.
             </p>
             <button className="container-card__link" variant="primary">
               <a href="https://expensetracr.netlify.app/">Take me to Website</a>

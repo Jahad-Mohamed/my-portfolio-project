@@ -5,6 +5,10 @@
   height: 100vh;
   width: 100vw;
   padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media only screen and (min-width: 668px) {
   .section__container {
@@ -34,12 +38,12 @@
 }
 @media only screen and (min-width: 668px) {
   .about__section {
-    margin: 10rem 4rem;
+    width: 90%;
   }
 }
 @media only screen and (min-width: 1280px) {
   .about__section {
-    margin: 5rem 7rem;
+    width: 80%;
   }
 }
 .about__section .about__title {
